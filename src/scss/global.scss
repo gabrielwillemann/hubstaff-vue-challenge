@@ -1,1 +1,36 @@
-@import "base/typography.scss";
+$black: rgb(63, 75, 92);
+$blue: rgb(42, 167, 255);
+$green: rgb(40, 213, 130);
+$white: rgb(255, 255, 255);
+
+$dark: $black;
+$primary: $blue;
+$success: $green;
+$input-color: $black;
+$headings-color: $black;
+$popover-bg: rgb(40, 44, 52);
+$popover-body-color: $white;
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+.border-bottom-1 {
+  border-bottom: $border-width * 2 solid $border-color;
+}
+
+.table-link {
+  @extend a;
+  color: $black;
+}
+
+.w-col-2 {
+  width: 16.66666667% !important;
+}
+
+.w-col-1 {
+  width: 8.33333333% !important;
+}
+
+.w-col-0-5 {
+  width: 4.66666666% !important;
+}
